@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: azure;
+  height: 1200px;
+}
+
+header.navbar-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto ;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+
+header.navbar-container .logo img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 3px solid white;
+box-shadow:  3px 3px 3px black;
+}
+
+header.navbar-container .navbar-list ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem 2rem;
+}
+
+header.navbar-container .navbar-list li {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style-type: none;
+} 
+
+header.navbar-container .navbar-list li a {
+text-decoration: none;
+color: black;
+}
+
+header.navbar-container .navbar-list li a:hover {
+  color: blue;
+  transition: all 0.2s ease-in-out;
+}
+
+main {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+}
+
+main .content {
+  display: flex;
+  align-items: center;
+}
+
+main .content .deskription {
+flex: 1 1;
+}
+
+main .content .deskription .judul {
+  margin-block: 1rem;
+  font-size: 3rem;
+}
+
+main .content .deskription p { 
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+
+main .content .deskription button { 
+  padding: 0.7rem 3rem;
+  border: 3px solid transparent;
+  border-radius: 99px;
+  margin-block-start: 1rem;
+  background-color: salmon;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+}
+
+main .content .deskription button:hover { 
+  border: 3px solid salmon;
+  background-color: transparent;
+  color: salmon;
+}
+
+main .content .content-img  {
+  display: flex;
+}
+
+main .content .content-img img {
+  display: flex;
+  min-width: 250px;
+  margin: auto;
+  border-radius: 20%;
+  width: 50%;
+  height: 400px;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .sosial-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .sosial-media ul {
+  display: flex;
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: salmon;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+main aside .sosial-media li {
+  list-style-type: none;
+}
+
+main aside .sosial-media li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}
+
+main aside .sosial-media li a:hover {
+  color: salmon;
+  transition: all 0.1s ease-in-out;
+}
